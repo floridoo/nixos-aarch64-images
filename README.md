@@ -1,3 +1,10 @@
+### Changes in this fork:
+- support for Radxa Zero 3E
+- compiling on Linux Aarch64
+- pinned to v24.05 instead of unstable
+
+---
+
 # NixOS aarch64 images
 
 Build aarch64 images for ARM single board computer that require

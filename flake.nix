@@ -1,11 +1,10 @@
 {
   description = "Build NixOS images for various ARM single computer boards";
-  # pin this to unstable
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
   outputs = { self, nixpkgs }: {
-    packages.x86_64-linux = import ./. {
-      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    packages.aarch64-linux = import ./. {
+      pkgs = nixpkgs.legacyPackages.aarch64-linux;
     };
   };
 }
